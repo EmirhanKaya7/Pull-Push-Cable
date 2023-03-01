@@ -27,11 +27,12 @@ public class Move : MonoBehaviour
         }if (Input.GetKey("w"))
         {
             player.isKinematic = false;
-            transform.position += Vector3.up*.5f;
+            transform.position += Vector3.up*.35f;
 
         }if (Input.GetKey("s"))
         {
-            transform.position += Vector3.back*0.05f;
+            player.isKinematic = false;
+            transform.position += Vector3.down*0.35f;
 
         }
     }
